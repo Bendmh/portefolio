@@ -1,49 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!--<script type="text/javascript">
-function createFichier(nomdufichier, contenudufichier)
-{
-  var a = document.createElement('a');
-  a.href = 'data:attachment/text,' + encodeURIComponent(contenudufichier);
-  a.target = '_blank';
-  a.download = nomdufichier + '.xlsx';
-  document.body.appendChild(a);
-  a.click();
-}
-  
-$(document).ready(function(){
-  source = $('body').html();
-  source = source.replace(/\n/g, '');
-  source = source.trim();
-  source = source.replace(/<\/td>/g, "\t");
-  source = source.replace(/<\/tr>/g, "\n");
-  source = source.replace(/<td>/g, '');
-  source = source.replace(/<tr>/g, '');
-  source = source.replace('<table><tbody>', '');
-  source = source.replace('</tbody></table>', '');
-  if(confirm('Voulez vous telecharger le fichier Excel?')) {
-    createFichier('tableau', source);
-  }
-});
-</script>-->
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
- 
-<!-- Ici votre tableau : !-->
-<table>
-<tr>
-<td>cellule 1</td>
-<td>cellule 2</td>
-<td>cellule 3</td>
-</tr>
-<tr>
-<td>cellule 4</td>
-<td>cellule 5</td>
-<td>cellule 6</td>
-</tr>
-</table>
-  
+
+<!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="CV.html">CV</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activités
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Openclassrooms</a>
+                        <a class="dropdown-item" href="#">Formations</a>
+                        <!--<div class="dropdown-divider"></div>-->
+                        <a class="dropdown-item" href="#">Divers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--Navigation-->
+
+
+<!--Page de garde-->
+    <div class="jumbotron">
+        <h1>Bienvenue sur mon portfolio</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6">
+                <h1>Benoît de Mahieu</h1>
+                <ul>
+                    <li>Web développeur</li>
+                    <li>Infrastructure réseau</li>
+                    <li> professeur de mathématique</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6">
+                <img src="IMG/BenDmh.JPG" alt="Benoit de Mahieu">
+            </div>
+        </div>
+    </div>
+<!--Page de garde-->
+
+<footer>
+
+</footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
