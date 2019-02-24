@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--<script type="text/javascript">
+function createFichier(nomdufichier, contenudufichier)
+{
+  var a = document.createElement('a');
+  a.href = 'data:attachment/text,' + encodeURIComponent(contenudufichier);
+  a.target = '_blank';
+  a.download = nomdufichier + '.xlsx';
+  document.body.appendChild(a);
+  a.click();
+}
+  
+$(document).ready(function(){
+  source = $('body').html();
+  source = source.replace(/\n/g, '');
+  source = source.trim();
+  source = source.replace(/<\/td>/g, "\t");
+  source = source.replace(/<\/tr>/g, "\n");
+  source = source.replace(/<td>/g, '');
+  source = source.replace(/<tr>/g, '');
+  source = source.replace('<table><tbody>', '');
+  source = source.replace('</tbody></table>', '');
+  if(confirm('Voulez vous telecharger le fichier Excel?')) {
+    createFichier('tableau', source);
+  }
+});
+</script>-->
+  
+</head>
+<body>
+ 
+<!-- Ici votre tableau : !-->
+<table>
+<tr>
+<td>cellule 1</td>
+<td>cellule 2</td>
+<td>cellule 3</td>
+</tr>
+<tr>
+<td>cellule 4</td>
+<td>cellule 5</td>
+<td>cellule 6</td>
+</tr>
+</table>
+  
+</body>
+</html>
