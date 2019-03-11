@@ -17,3 +17,7 @@ footer {
 .red {
     color: red;
 }
+
+.card {
+    max-height: 400px;
+}
