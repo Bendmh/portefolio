@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSN3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Activités
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="openclassrooms.html">Openclassrooms</a>
+                    <a class="dropdown-item" href="formations.html">Formations</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="divers.html">Divers</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Résumé</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Navigation-->
+
+
+<!--Page de garde-->
+<div class="jumbotron">
+    <h1>GNS3</h1>
+</div>
+<div class="container">
+    <p>J’ai attaqué cette activité pour me familiariser avec les images OS. Durant tous les TP de Mr Schalwijk, j’utilisais uniquement Cisco packet tracer. </p>
+    <p>Grâce à GNS3, j’ai simulé une architecture avec des machines virtuelles. J’ai utilisé VMware Workstation de mon ordinateur pour lancer les machines. J’ai géré la quantité de mémoire à donner à chacune d’elles, RAM, Go ainsi qu’importer une image de l’OS. C’est aussi grâce à cette formation que j’ai pu voir les limites de mon ordinateur. </p>
+    <p>Tout d’abord j’ai compris la différence entre l’émulation et la virtualisation. Cette différence m’a fait comprendre ce qui se passait quand j’émulais un Game boy sur ma tablette pour jouer à des vieux jeux. Pour la virtualisation cette formation a complété le cours de Mme Van den Schriek et m’a permis de garder à jours toutes les notions lié à ce concept. De plus GNS3 est gratuit, open source, multiplateforme et permet de tester toutes les machines que l’on peut rencontrer à ce jour. Il est fiable et utilisé par un grand nombre de professionnels.</p>
+    <p>Ensuite j’ai continué la formation en installant tous les programmes liés à GNS3. Grâce au site de GNS3 j’ai trouvé différentes appliances. https://gns3.com/marketplace/appliances. La première image à mettre en place fut le pfsense. J’ai installé l’image sur mon ordinateur, utilisé cette image pour avoir une machine virtuelle et ensuite importé cette VM dans GNS3. J’ai fait pareil avec un serveur TinyCoreLinux.</p>
+    <p>Pour finir l’architecture, j’ai connecté le tout avec des switchs et deux ordinateurs proposés par GNS3. Après cela, j’ai testé la connectivité de mon réseau. J’ai testé les pings entre les deux ordinateurs ainsi que vers le serveur. Une fois cela en place le labo pouvait évoluer.</p>
+    <p>Une fois que tout marchait bien, j’ai appris à mettre des règles de pare-feu via le pfsense. Le but final étant qu’un des ordinateurs puisse atteindre le serveur mais pas l’autre. En bonus j’ai pu simuler internet dans GNS3. Ma machine virtuelle connectée dans GNS3 avait accès à internet grâce au réseau mis en place. Cela montre une partie de la puissance de cet outil.</p>
+    <p>Cette formation est super bien expliqué et permet de comprendre mieux la mise en réseau de matériel ainsi de voir la puissance de la virtualisation. Lorsque je devrai mettre en place un réseau, cet outil me permettra de visualiser mon réseau, de mettre les config en place et tester que tout fonctionne bien avant d’aller chez le client.</p>
+    <p class="d-none d-md-block d-lg-block">
+        <embed src=certificats/document(4).pdf width=800 height=650 type='application/pdf'/>
+    </p>
+</div>
+<!--Page de garde-->
+
+<footer>
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
