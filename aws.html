@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Activités
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="openclassrooms.html">Openclassrooms</a>
+                    <a class="dropdown-item" href="formations.html">Formations</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="divers.html">Divers</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Résumé</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Navigation-->
+
+
+<!--Page de garde-->
+<div class="jumbotron">
+    <h1>AWS</h1>
+</div>
+<div class="container">
+    <p>J’ai fait cette activité car je voulais toucher à d’autres Cloud que Google drive. J’avais déjà utilisé le SAAS et le IAAS lors du travail de Madame Van den Schriek. Je voulais également tester le PAAS et j’ai donc suivi cette formation.</p>
+    <p>En premier lieu, j’ai eu un rappel sur le Cloud, l’avantage de celui-ci et les différents types existants. Le plus gros avantage du Cloud est que l’utilisateur évite tous les problèmes physiques d’un serveur et laisse la société s’occuper de cela. Le serveur utilisé n’est pas fixe, l’utilisateur loue une quantité de puissance de calcul et de stockage.</p>
+    <p>Ensuite j’ai découvert quelques services. Amazon donne accès à énormément de services tels que EC2, RDS et S3 et bien d’autres que j’aborderai plus loin. Pour éviter quelques complications, Amazon a également mis en place le système Elastic Beanstalk qui permet de faciliter la mise en place des autres services.</p>
+    <p>EC2 : Elastic Compute Cloud. Service originel d’Amazon et le plus utilisé chez AWS. Ce service permet d’héberger un site web classique. Il est possible de mettre en place le système d’adresse élastique, ce qui permet de garder une adresse statique pour le serveur utilisé. Un système de clé, facilite la connexion à son serveur de manière sécurisée. L’équilibrage de charge permet de rediriger les clients si une congestion arrive. L’auto scaling, permet d’ajouter des serveurs si le trafic augmente.</p>
+    <p> RDS : Relational Database Service. Gestion de la base de données. RDS facilite grandement la mise en place d’une base de données pour notre site web. Tout d’abord, la base de données est déjà installeé, pas besoin de faire des mises à jour, sauvegarde et restauration simple et possibilité d’augmenter le nombre de serveur si besoin. En quelques clics, il est possible d’installer plusieurs moteurs de base de données (MySQL, Postgresql, Mariadb, …). Bien entendu, une fois la base de données en place, il faut la faire communiquer avec le serveur EC2. Tout cela se fait très facilement.</p>
+    <p> S3 : Simple Storage Service. Service de stockage dans le Cloud. Il sert à héberger des fichiers tels que des images, programmes ou fichiers html. Il n’est pas un hébergeur de site web et n’est pas non plus utilisé comme un ftp. La plupart des entreprises s’en servent pour héberger leurs films (Netflix), images d’utilisateurs (airbnb), images de cours (Openclassrooms) ou encore les back-up des bases de données. Les avantages de S3 par rapport aux autres solutions, c’est la facilité de configuration des droits d’accès, la possibilité de versionner ses fichiers, de chiffrer les fichiers sensibles protégean ainsi les informations, de répliquer les fichiers entre différents datacenters ou encore d’indiquer une date d’expiration des fichiers afin de permettre à l’utilisateur de les supprimer.</p>
+    <p class="d-none d-md-block d-lg-block">
+        <embed src=certificats/document(7).pdf width=800 height=650 type='application/pdf'/>
+    </p>
+</div>
+<!--Page de garde-->
+
+<footer>
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
