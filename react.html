@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Activités
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="openclassrooms.html">Openclassrooms</a>
+                    <a class="dropdown-item" href="formations.html">Formations</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="divers.html">Divers</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Résumé</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Navigation-->
+
+
+<!--Page de garde-->
+<div class="jumbotron">
+    <h1>Formation react</h1>
+</div>
+<div class="container">
+    <p>Lors de vacances de toussaint, j’ai assisté à une formation sur react.js. Elle se faisait à l’EPHEC et durait 3 jours.
+        Nous avions le choix entre react et angular et j’ai choisi react car j’en avais déjà pratiqué un petit peu et je trouvais que
+        c’était pratique comme langage coté front-end.
+    </p>
+    <p>
+        React est une librairie JavaScript développé par Facebook. Elle est vraiment efficace grâce à son DOM virtuel qui permet de changer uniquement
+        les éléments nécessaire dans le navigateur. Ce système est très efficace pour les sites comme Facebook, Netflix et autres car les performances
+        sont grandes puisque la page n’est plus chargée à chaque clic. React fonctionne avec un nouveau langage appelé JSX, celui-ci permet de générer
+        du HTML grâce à des objets JavaScripts. Toutes une page est vue comme des objets avec des attributs et méthodes. Chacun peut être changé à volonté
+        et rend le site plus dynamique.
+    </p>
+    <p>
+        Durant cette formation, j’ai fait un petit projet react. Pour récupérer l’arborescence du début, une seule commande : npm init react-app my-app
+        Après ceci j’obtiens le début de mon projet et c’est à moi de créer des nouvelles classes pour visualiser ce que je désire.
+    </p>
+    <p>
+        Au début il m’a fallu m’adapté au langage JSX et de faire la différence avec le JS. Envoyer des balises HTML comme du JS. J’ai appris ce qu’était
+        le state et à le manipuler. Comme dit plus haut chaque élément est vu comme une classe et chaque attribut peut être modifié par la suite.
+        Par exemple dans une page avec le body, j’injecte la classe horloge qui a comme attributs les heures, minutes et secondes. Je peux donc visualiser
+        cette horloge. Maintenant pour la rendre plus dynamique il faut que l’heure avance, ce qui est le rôle des événements et cycle de vie. Ce sont des
+        méthodes utilisées pour atteindre chaque attribut. Chaque seconde, l’attribut seconde va augmenter de 1, toutes les 60 secondes l’attribut minute va
+        augmenter de 1, etc. C’est ici la grande puissance de react c’est que dans la vue la page n’est jamais rechargée et seul l’élément est modifié.
+    </p>
+    <p>
+        J’ai trouvé que cette formation était super pour la suite de notre parcours. React apparait de plus en plus dans la société des informaticiens.
+        Ce langage permet de plus d’accélérer la navigation et donc favorise le client. Je trouvais vraiment dommage que ça n’ait pas duré plus longtemps.
+         cause de cela les explications étaient trop rapides et chaque activité était faite dans la précipitation. En trois jours nous n’avons eu le temps
+        de voir que les bases du langage et trop de théorie sans application.
+    </p>
+</div>
+<!--Page de garde-->
+
+<footer>
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
