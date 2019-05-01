@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Activités
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="openclassrooms.html">Openclassrooms</a>
+                    <a class="dropdown-item" href="formations.html">Formations</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="divers.html">Divers</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Résumé</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Navigation-->
+
+
+<!--Page de garde-->
+<div class="jumbotron">
+    <h1>Sécurisez votre réseau grâce aux VPN et Firewall</h1>
+</div>
+<div class="container">
+    <p>
+        Cette formation est dans la continuité de celle sur GNS3. Ici je vais me concentrer sur la partie sécurité. Le firewall est l’outil
+        indispensable pour sécuriser son réseau. Il sert comme la porte d’une maison, empêcher n’importe qui de s’introduire dans son espace privé.
+        Cette porte empêche les malfrats de passer mais également permet de contrôler le trafic sortant. Il est donc indispensable que le firewall soit
+        au bon endroit mais s’assurer que le trafic entrant passe bien par celui-ci.
+    </p>
+    <p>
+        Dans une entreprise il est important de définir une politique de sécurité. Selon l’entreprise, définir les besoins et mettre en place les règles adéquates.
+        La meilleure stratégie est d’interdire tout et ensuite d’ouvrir des accès au fur et à mesure. Autre point important c’est définir
+        l’architecture. La plus simple est de mettre le firewall entre le Lan et le Wan. De cette manière les couches 3 et 4 sont bloquées. Ensuite un proxy (couche applicative),
+        une zone DMZ (sécurité accès internet) ou/et la NAT (attaques directes et écoute) peut être ajoutés.
+    </p>
+    <p>
+        Dans le labo j’ai mis en place une infrastructure avec un pfsense, une zone DMZ avec un serveur web accessible depuis internet et
+        une partie LAN protégée contre les attaques externes. Pour commencer j’ai vérifié que chaque machine pouvait se pinger pour partir
+        sur une bonne base. Ensuite j’ai ajouté les règles sur le pfsense créant la sécurité derrière mon infrastructure. J’ai également
+        sécurisé mon serveur web avec IpTables et pour finir j’ai activé le proxy sur le pfsense.
+    </p>
+    <p>
+        Pour sécuriser encore plus j’ai mis en place un VPN. J’ai ajouté un deuxième site dans GNS3 qui a pour rôle de client distant.
+        Grâce à IPSec les deux sites sont connectés ensemble. La configuration doit se faire des deux côtés et compléter les deux étapes
+        pour s’assurer du bon fonctionnement du VPN.
+    </p>
+    <p>
+        Cette activité était enrichissante et dans la continuité de celle sur GNS3. J’ai pu me concentrer sur la partie sécurité d’une
+        infrastructure et de mettre en place le système. La partie théorie m’a permis de comprendre plus facilement le cours de M. Schalwijk
+        et de plus la pratique derrière permet de se rendre compte du travail à fournir pour avoir un bon réseau.
+    </p>
+    <p>Lien vers openclassrooms</p>
+    <ul>
+        <li><a href="https://openclassrooms.com/fr/courses/1946106-securisez-votre-reseau-grace-aux-vpn-et-firewall">Sécurisez votre réseau grâce aux VPN et Firewall</a></li>
+    </ul>
+</div>
+<!--Page de garde-->
+
+<footer>
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
